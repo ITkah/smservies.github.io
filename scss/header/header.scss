@@ -16,11 +16,11 @@
             height: auto;
         }
         .logo_text {
-            max-width: 90px;
+            max-width: 100px;
             color: #fff;
             text-transform: uppercase;
             letter-spacing: .13em;
-            font: 400 8px/9px 'Roboto', sans-serif;
+            font: 400 8.5px/11px 'Roboto', sans-serif;
             margin-left: 10px;
             padding-left: 15px;
             position: relative;
@@ -32,7 +32,7 @@
                 background: #fff;
                 display: block;
                 left: 0;
-                top: -5px;
+                top: -3px;
                 position: absolute;
             }
         }
@@ -45,6 +45,8 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
+            appearance: none;
+            outline: none;
             cursor: pointer;
             .notification_img {
                 margin-right: 8px;
@@ -52,6 +54,9 @@
             .notification_text {
                 text-transform: uppercase;
                 color: #8B90A0;
+                appearance: none;
+                user-select: none;
+                outline: none;
                 font: 900 .75rem 'Roboto', sans-serif;
                 letter-spacing: .1em;
             }
@@ -107,6 +112,8 @@
                 .balance_sale_text {
                     font: 900 .75rem 'Roboto', sans-serif;
                     color: #C5A67C;
+                    position: relative;
+                    top: -1.5px;
                     text-transform: uppercase;
                     letter-spacing: .1em;
                 }
@@ -156,7 +163,7 @@
                 opacity: 0;
                 pointer-events: none;
                 z-index: 99;
-                transition: .3s;
+                transition: .2s;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -220,7 +227,7 @@
                 display: flex;
                 align-items: center;
                 text-decoration: none;
-                font: 500 1rem 'Roboto', sans-serif;
+                font: 600 1rem 'Roboto', sans-serif;
                 color: #8B90A0;
                 span {
                     color: #4E4E5A;
