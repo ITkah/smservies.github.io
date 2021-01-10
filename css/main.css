@@ -150,6 +150,10 @@
         text-transform: uppercase;
         letter-spacing: .1em; }
     .header_top .header_top_panel .top_panel_lang {
+      outline: none;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
       margin-right: 25px;
       padding: 5px 15px;
       background: #808080;
@@ -212,7 +216,11 @@
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        text-decoration: none; }
+        text-decoration: none;
+        outline: none;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none; }
         .header_top .header_top_panel .top_panel_lang .lang_hide img {
           margin-right: 8px;
           max-width: 100%;

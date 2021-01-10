@@ -113,6 +113,8 @@
             }
         }
         .top_panel_lang {
+            outline: none;
+            appearance: none;
             margin-right: 25px;
             padding: 5px 15px;
             background: #808080;
@@ -159,6 +161,8 @@
                 align-items: center;
                 justify-content: center;
                 text-decoration: none;
+                outline: none;
+                appearance: none;
                 img {
                     margin-right: 8px;
                     max-width: 100%;
