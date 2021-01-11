@@ -10,6 +10,12 @@
             align-items: center;
             justify-content: space-between;
         }
+        .call_menu {
+            pointer-events: none;
+            @media (max-width: 990px) {
+                pointer-events: auto;
+            }
+        }
         .header_logo {
             display: flex;
             align-items: center;
@@ -403,7 +409,8 @@
             @media (max-width: 990px) {
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-gap: 15px;
+                grid-gap: 10px;
+                margin-bottom: 15px;
             }
             .top_panel_notification {
                 display: flex;

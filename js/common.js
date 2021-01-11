@@ -25,6 +25,7 @@ callMes[0].onclick = function() {
 }
 
 $(".call_menu").on("click", function(e) {
+    e.preventDefault();
     $(this).siblings('ul').slideToggle();
 });
 
