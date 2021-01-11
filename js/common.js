@@ -17,4 +17,13 @@ callVoice[0].onclick = function() {
     }
 }
 
+var callMes = document.getElementsByClassName('message_img');
+var hideMes = document.getElementsByClassName('message_hide');
+
+callMes[0].onclick = function() {
+    hideMes[0].classList.toggle("message_hide_active");
+}
+
+
+
 //Header end
