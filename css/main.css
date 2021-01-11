@@ -420,12 +420,7 @@
         pointer-events: auto; }
         @media (max-width: 576px) {
           .header_top .header_top_panel .top_panel_message .message_hide {
-            width: 300px; } }
-        @media (max-width: 420px) {
-          .header_top .header_top_panel .top_panel_message .message_hide {
-            right: -20px; } }
-        @media (max-width: 400px) {
-          .header_top .header_top_panel .top_panel_message .message_hide {
+            width: 350px;
             right: -85px;
             width: 320px; } }
         @media (max-width: 355px) {
@@ -440,7 +435,7 @@
           top: -12px;
           border: 6px solid transparent;
           border-bottom: 6px solid #3E465F; }
-          @media (max-width: 400px) {
+          @media (max-width: 576px) {
             .header_top .header_top_panel .top_panel_message .message_hide::before {
               display: none; } }
         .header_top .header_top_panel .top_panel_message .message_hide .message_hide_box {
@@ -742,7 +737,8 @@
                   align-items: center;
           text-decoration: none;
           font: 600 1rem 'Roboto', sans-serif;
-          color: #8B90A0; }
+          color: #8B90A0;
+          white-space: nowrap; }
           @media (max-width: 1200px) {
             .header_nav .header_nav_wrap .header_nav_box .header_item .header_link {
               font: 600 .87rem 'Roboto', sans-serif; } }

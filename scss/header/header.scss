@@ -328,12 +328,7 @@
                     transition: .2s;
                     pointer-events: auto;
                     @media (max-width: 576px) {
-                        width: 300px;
-                    }
-                    @media (max-width: 420px) {
-                        right: -20px;
-                    }
-                    @media (max-width: 400px) {
+                        width: 350px;
                         right: -85px;
                         width: 320px;
                     }
@@ -349,7 +344,7 @@
                         top: -12px;
                         border: 6px solid transparent;
                         border-bottom: 6px solid #3E465F;
-                        @media (max-width: 400px) {
+                        @media (max-width: 576px) {
                             display: none;
                         }
                     }
@@ -625,6 +620,7 @@
                         text-decoration: none;
                         font: 600 1rem 'Roboto', sans-serif;
                         color: #8B90A0;
+                        white-space: nowrap;
                         @media (max-width: 1200px) {
                             font: 600 .87rem 'Roboto', sans-serif;
                         }
