@@ -24,6 +24,16 @@ callMes[0].onclick = function() {
     hideMes[0].classList.toggle("message_hide_active");
 }
 
+$(".call_menu").on("click", function(e) {
+    $(this).siblings('ul').slideToggle();
+});
 
+$(".header_btn_img").on("click", function() {
+    $(".header_nav").addClass("header_nav_active");
+});
+
+$(".header_nav_close").on("click", function() {
+    $(".header_nav").removeClass("header_nav_active");
+});
 
 //Header end
