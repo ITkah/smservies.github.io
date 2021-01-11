@@ -3,7 +3,7 @@
         background: linear-gradient(269.86deg, #3A3A41 0%, #282828 98.54%);
         padding: 20px 0;
         @media (max-width: 576px) {
-            padding: 12px 0;
+            padding: 12px 0 10px 0;
         }
         .header_top_wrap {
             display: flex;
@@ -327,6 +327,21 @@
                     opacity: 0;
                     transition: .2s;
                     pointer-events: auto;
+                    @media (max-width: 576px) {
+                        width: 300px;
+                    }
+                    @media (max-width: 420px) {
+                        right: -20px;
+                    }
+                    @media (max-width: 400px) {
+                        right: -85px;
+                        width: 320px;
+                    }
+                    @media (max-width: 355px) {
+                        right: -80px;
+                        width: 290px;
+                        top: 180%;
+                    }
                     &::before {
                         content: '';
                         position: absolute;
@@ -334,14 +349,25 @@
                         top: -12px;
                         border: 6px solid transparent;
                         border-bottom: 6px solid #3E465F;
+                        @media (max-width: 400px) {
+                            display: none;
+                        }
                     }
                     .message_hide_box {
                         padding: 10px 20px;
                         border-bottom: 1px solid #51586f;
+                        @media (max-width: 576px) {
+                            padding: 10px;
+                        }
                         .message_hide_title {
                             color: #ABABAB;
                             font: 700 .95rem 'Roboto', sans-serif;
                             margin-bottom: 5px;
+                            @media (max-width: 576px) {
+                                margin-bottom: 7px;
+                                display: block;
+                                font: 700 .87rem/17px 'Roboto', sans-serif;
+                            }
                         }
                         .message_hide_text {
                             font: 400 .8rem 'Roboto', sans-serif;
