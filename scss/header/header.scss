@@ -1,4 +1,11 @@
     // Header начало
+    header {
+        margin-bottom: 30px;
+        @media (max-width: 990px) {
+            margin-bottom: 25px;
+        }
+    }
+    
     .header_top {
         background: linear-gradient(269.86deg, #3A3A41 0%, #282828 98.54%);
         padding: 20px 0;
