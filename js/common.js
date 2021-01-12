@@ -24,6 +24,23 @@ callMes[0].onclick = function() {
     hideMes[0].classList.toggle("message_hide_active");
 }
 
+
+var callUser = document.getElementsByClassName('call_user');
+var hideUser = document.getElementsByClassName('user_hide_wrap');
+var revBox = document.getElementsByClassName('ref_box');
+
+callUser[0].onclick = function() {
+    hideUser[0].classList.toggle("user_hide_wrap_active");
+}
+
+function copyRef() {
+    var copyText = document.getElementById("copy");
+    copyText.select();
+    copyText.value = 'Ссылка скопирована';
+    document.execCommand("copy");
+    revBox[0].classList.add("rev_complete");
+}
+
 $(".call_menu").on("click", function(e) {
     e.preventDefault();
     $(this).siblings('ul').slideToggle();

@@ -384,6 +384,129 @@
                     pointer-events: auto;
                 }
             }
+            .top_panel_user {
+                position: relative;
+                cursor: pointer;
+                .user_hide_wrap {
+                    position: absolute;
+                    width: 260px;
+                    background: #3E465F;
+                    right: 0;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: .2s;
+                    top: 140%;
+                    z-index: 99;
+                    @media (max-width: 355px) {
+                        right: -30px;
+                        width: 290px;
+                        top: 170%;
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        right: 6px;
+                        top: -12px;
+                        border: 6px solid transparent;
+                        border-bottom: 6px solid #3E465F;
+                        @media (max-width: 355px) {
+                            right: 37px;
+                        }
+                    }
+                    .user_hide_box {
+                        padding: 10px 20px;
+                        border-bottom: 1px solid #51586f;
+                        @media (max-width: 576px) {
+                            padding: 10px;
+                        }
+                        .user_hide_text {
+                            color: #ABABAB;
+                            font: 700 .95rem 'Roboto', sans-serif;
+                            @media (max-width: 576px) {
+                                display: block;
+                                font: 700 .87rem/17px 'Roboto', sans-serif;
+                            }
+                        }
+                        .ref_box {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-top: 5px;
+                            cursor: pointer;
+                            user-select: none;
+                            &:hover {
+                                .rev_link {
+                                    color: #fff;
+                                }
+                                .rev_btn {
+                                    .dis {
+                                        display: none;
+                                    }
+                                    .act {
+                                        display: block;
+                                    }
+                                }
+                            }
+                            .rev_link {
+                                color: #8B90A0;
+                                font: 400 .72rem 'Roboto', sans-serif;
+                                appearance: none;
+                                box-shadow: none;
+                                outline: none;
+                                cursor: pointer;
+                                border-radius: none;
+                                background: transparent;
+                                border: none;
+                                user-select: none;
+                                width: 100%;
+                                padding: 0;
+                            }
+                            .rev_btn {
+                                position: relative;
+                                height: 15px;
+                                width: 15px;
+                                right: -10px;
+                                top: -1px;
+                                @media (max-width: 990px) {
+                                    right: 0;
+                                }
+                                img {
+                                    height: 15px;
+                                    width: 15px;
+                                    position: absolute;
+                                }
+                                .act {
+                                    display: none;
+                                }
+                                .copy {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .rev_complete {
+                            pointer-events: none;
+                            .rev_btn {
+                                .dis {
+                                    display: none;
+                                }
+                                .act {
+                                    display: none;
+                                }
+                                .copy {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    .user_hide_box:last-child {
+                        border: none;
+                    }
+                }
+                .user_hide_wrap_active {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+            }
         }
     }
     
