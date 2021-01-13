@@ -17,13 +17,6 @@
             align-items: center;
             justify-content: space-between;
         }
-        .call_menu {
-            pointer-events: none;
-            transition: .3s;
-            @media (max-width: 990px) {
-                pointer-events: auto;
-            }
-        }
         .header_logo {
             display: flex;
             align-items: center;
@@ -673,6 +666,13 @@
                             }
                         }
                     }
+                    .call_menu {
+                        pointer-events: none;
+                        transition: .3s;
+                        @media (max-width: 990px) {
+                            pointer-events: auto;
+                        }
+                    }
                     .mob_arr {
                         display: none;
                         @media (max-width: 990px) {
@@ -680,7 +680,11 @@
                             position: absolute;
                             right: 0;
                             top: 2px;
+                            transform: rotate(90deg);
                         }
+                    }
+                    .call_menu_active {
+                        transform: rotate(-90deg);
                     }
                     .sub_menu {
                         top: 200%;
@@ -698,6 +702,8 @@
                             background: transparent;
                             display: none;
                             transition: none;
+                            opacity: 1;
+                            pointer-events: auto;
                         }
                         &::after {
                             content: '';
@@ -740,7 +746,11 @@
                                     position: absolute;
                                     right: 0;
                                     top: 5px;
+                                    transform: rotate(90deg);
                                 }
+                            }
+                            .call_menu_active {
+                                transform: rotate(-90deg);
                             }
                             &:hover {
                                 background: #484f67;
@@ -779,6 +789,8 @@
                                     left: auto;
                                     transition: none;
                                     display: none;
+                                    opacity: 1;
+                                    pointer-events: auto;
                                     margin-bottom: -10px;
                                 }
                                 li {
@@ -845,10 +857,6 @@
     
     .header_nav_active {
         transform: translateX(0);
-    }
-    
-    .call_menu_active {
-        transform: rotate(90deg);
     }
     
     //Header конец
