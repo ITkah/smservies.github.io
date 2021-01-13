@@ -26,7 +26,10 @@ header {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .header_top .call_menu {
-    pointer-events: none; }
+    pointer-events: none;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
     @media (max-width: 990px) {
       .header_top .call_menu {
         pointer-events: auto; } }
@@ -152,6 +155,10 @@ header {
           display: none; } }
       .header_top .header_top_panel .top_panel_notification .notification_img {
         margin-right: 8px; }
+      .header_top .header_top_panel .top_panel_notification .active_text {
+        display: none; }
+      .header_top .header_top_panel .top_panel_notification .active_mus {
+        display: none; }
       .header_top .header_top_panel .top_panel_notification .notification_text {
         text-transform: uppercase;
         color: #8B90A0;
@@ -165,6 +172,14 @@ header {
         outline: none;
         font: 900 .75rem 'Roboto', sans-serif;
         letter-spacing: .1em; }
+    .header_top .header_top_panel .top_panel_notification_active .notification_text {
+      display: none; }
+    .header_top .header_top_panel .top_panel_notification_active .notification_img {
+      display: none; }
+    .header_top .header_top_panel .top_panel_notification_active .active_text {
+      display: block; }
+    .header_top .header_top_panel .top_panel_notification_active .active_mus {
+      display: block; }
     .header_top .header_top_panel .top_panel_balance {
       margin: 0 25px;
       padding: 0 25px;
@@ -634,9 +649,21 @@ header {
         width: 22px;
         left: -2px;
         position: relative; }
+      .header_nav .header_top_panel .top_panel_notification .active_mus {
+        display: none; }
+      .header_nav .header_top_panel .top_panel_notification .active_text {
+        display: none; }
       .header_nav .header_top_panel .top_panel_notification .notification_text {
         color: #8B90A0;
         font: 600 .95rem 'Roboto', sans-serif; }
+    .header_nav .header_top_panel .top_panel_notification_active .notification_img {
+      display: none; }
+    .header_nav .header_top_panel .top_panel_notification_active .notification_text {
+      display: none; }
+    .header_nav .header_top_panel .top_panel_notification_active .active_text {
+      display: block; }
+    .header_nav .header_top_panel .top_panel_notification_active .active_mus {
+      display: block; }
     .header_nav .header_top_panel .top_panel_balance {
       display: -webkit-box;
       display: -webkit-flex;
@@ -920,6 +947,11 @@ header {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0); }
+
+.call_menu_active {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
 
 .stages {
   margin-bottom: 25px; }

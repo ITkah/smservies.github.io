@@ -19,6 +19,7 @@
         }
         .call_menu {
             pointer-events: none;
+            transition: .3s;
             @media (max-width: 990px) {
                 pointer-events: auto;
             }
@@ -108,6 +109,12 @@
                 .notification_img {
                     margin-right: 8px;
                 }
+                .active_text {
+                    display: none;
+                }
+                .active_mus {
+                    display: none;
+                }
                 .notification_text {
                     text-transform: uppercase;
                     color: #8B90A0;
@@ -116,6 +123,20 @@
                     outline: none;
                     font: 900 .75rem 'Roboto', sans-serif;
                     letter-spacing: .1em;
+                }
+            }
+            .top_panel_notification_active {
+                .notification_text {
+                    display: none;
+                }
+                .notification_img {
+                    display: none;
+                }
+                .active_text {
+                    display: block;
+                }
+                .active_mus {
+                    display: block;
                 }
             }
             .top_panel_balance {
@@ -552,9 +573,29 @@
                     left: -2px;
                     position: relative;
                 }
+                .active_mus {
+                    display: none;
+                }
+                .active_text {
+                    display: none;
+                }
                 .notification_text {
                     color: #8B90A0;
                     font: 600 .95rem 'Roboto', sans-serif;
+                }
+            }
+            .top_panel_notification_active {
+                .notification_img {
+                    display: none;
+                }
+                .notification_text {
+                    display: none;
+                }
+                .active_text {
+                    display: block;
+                }
+                .active_mus {
+                    display: block;
                 }
             }
             .top_panel_balance {
@@ -804,6 +845,10 @@
     
     .header_nav_active {
         transform: translateX(0);
+    }
+    
+    .call_menu_active {
+        transform: rotate(90deg);
     }
     
     //Header конец
