@@ -53,3 +53,7 @@ $(".header_nav_close").on("click", function() {
 
 
 //Header end
+
+$(".output_heart").on("click", function() {
+    $(this).toggleClass("favorite_active");
+});
