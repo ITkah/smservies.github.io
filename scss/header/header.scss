@@ -694,6 +694,7 @@
                         pointer-events: none;
                         opacity: 0;
                         transition: .2s;
+                        z-index: 99;
                         background: #3E465F;
                         @media (max-width: 990px) {
                             width: auto;
