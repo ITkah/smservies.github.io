@@ -57,3 +57,10 @@ $(".header_nav_close").on("click", function() {
 $(".output_heart").on("click", function() {
     $(this).toggleClass("favorite_active");
 });
+
+
+//FAQ
+$('.faq_wrap .acc_head').on('click', function() {
+    $('.faq_wrap .acc_body').not($(this).next()).slideUp(200).parent().children(".acc_head").children("img").removeClass("rotate");
+    $(this).next().slideToggle(200).siblings(".acc_head").children("img").toggleClass("rotate");
+});
