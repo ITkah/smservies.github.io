@@ -261,36 +261,37 @@
             }
         }
     }
-    .pagination {
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: -4px;
+    @media (max-width: 990px) {
+        justify-content: center;
+        margin: 0;
+    }
+    li {
+        height: 32px;
+        width: 32px;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        margin-left: -4px;
-        @media (max-width: 990px) {
-            justify-content: center;
-            margin: 0;
-        }
-        li {
-            height: 32px;
-            width: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #FFF;
-            border: 1px solid #A1A4B1;
-            border-radius: 4px;
-            text-align: center;
-            margin: 0 4px;
-        }
-        .pagi_icon {
-            position: relative;
-            top: -2.5px;
-            left: .5px;
-        }
-        .num {
-            color: #505565;
-            font: 400 1rem 'Roboto', sans-serif;
-        }
+        justify-content: center;
+        background: #FFF;
+        border: 1px solid #A1A4B1;
+        border-radius: 4px;
+        text-align: center;
+        margin: 0 4px;
+    }
+    .pagi_icon {
+        position: relative;
+        top: -2.5px;
+        left: .5px;
+    }
+    .num {
+        color: #505565;
+        font: 400 1rem 'Roboto', sans-serif;
     }
 }
 
