@@ -140,7 +140,7 @@
 .active_number_wrap {
     .active_number_title {
         font: 600 1rem 'Roboto', sans-serif;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .active_number_wrap_output {
         display: grid;
@@ -166,6 +166,7 @@
             &:hover {
                 background: #FAFAFC;
                 border: 1px solid #D3D4D8;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
             }
             .delete_num {
                 position: absolute;
@@ -211,7 +212,7 @@
                 .number_prolong {
                     margin-left: 18px;
                     padding-left: 18px;
-                    font: 600 .95rem 'Roboto', sans-serif;
+                    font: 600 .9rem 'Roboto', sans-serif;
                     color: #8B90A0;
                     border-left: 1px solid #D3D4D8;
                     @media (max-width: 990px) {
@@ -249,9 +250,9 @@
                 }
                 .time_text {
                     color: #8B90A0;
-                    font: 400 .9rem 'Roboto', sans-serif;
+                    font: 500 .85rem 'Roboto', sans-serif;
                     @media (max-width: 380px) {
-                        font: 400 .8rem 'Roboto', sans-serif;
+                        font: 500 .8rem 'Roboto', sans-serif;
                     }
                     .red {
                         color: #DD1919;
@@ -299,14 +300,14 @@
     .number_info_title {
         font: 300 1rem 'Roboto', sans-serif;
         color: #505565;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         @media (max-width: 990px) {
             margin-bottom: 10px;
         }
     }
     .number_info_status {
         color: #505565;
-        font: 300 .95rem 'Roboto', sans-serif;
+        font: 400 .95rem 'Roboto', sans-serif;
         margin-bottom: 15px;
         @media (max-width: 990px) {
             margin-bottom: 10px;
@@ -314,7 +315,7 @@
     }
     .number_info_send {
         color: #505565;
-        font: 300 .95rem/19px 'Roboto', sans-serif;
+        font: 400 .95rem/19px 'Roboto', sans-serif;
         margin-bottom: 20px;
         @media (max-width: 990px) {
             margin-bottom: 15px;
@@ -322,7 +323,10 @@
     }
     .number_info_warning {
         color: #505565;
-        font: 300 .87rem/16px 'Roboto', sans-serif;
+        font: 500 .87rem/16px 'Roboto', sans-serif;
+        strong {
+            font: 900 .87rem 'Roboto', sans-serif;
+        }
     }
     .number_sms_output {
         display: grid;
@@ -350,6 +354,10 @@
             .sms_text {
                 font: normal .9rem/20px 'Roboto', sans-serif;
                 color: #505565;
+                max-width: 85%;
+                @media (max-width: 990px) {
+                    max-width: 100%;
+                }
             }
         }
     }

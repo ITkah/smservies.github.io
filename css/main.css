@@ -5,6 +5,12 @@ header {
     header {
       margin-bottom: 25px; } }
 
+.margin_custom {
+  margin-bottom: 65px; }
+  @media (max-width: 990px) {
+    .margin_custom {
+      margin-bottom: 25px; } }
+
 .header_top {
   background: -o-linear-gradient(180.14deg, #3A3A41 0%, #282828 98.54%);
   background: linear-gradient(269.86deg, #3A3A41 0%, #282828 98.54%);
@@ -1437,7 +1443,7 @@ header {
 
 .active_number_wrap .active_number_title {
   font: 600 1rem 'Roboto', sans-serif;
-  margin-bottom: 15px; }
+  margin-bottom: 20px; }
 
 .active_number_wrap .active_number_wrap_output {
   display: grid;
@@ -1465,7 +1471,9 @@ header {
     transition: .2s; }
     .active_number_wrap .active_number_wrap_output .active_number_box:hover {
       background: #FAFAFC;
-      border: 1px solid #D3D4D8; }
+      border: 1px solid #D3D4D8;
+      -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); }
     .active_number_wrap .active_number_wrap_output .active_number_box .delete_num {
       position: absolute;
       cursor: pointer;
@@ -1512,7 +1520,7 @@ header {
       .active_number_wrap .active_number_wrap_output .active_number_box .number_info_box .number_prolong {
         margin-left: 18px;
         padding-left: 18px;
-        font: 600 .95rem 'Roboto', sans-serif;
+        font: 600 .9rem 'Roboto', sans-serif;
         color: #8B90A0;
         border-left: 1px solid #D3D4D8; }
         @media (max-width: 990px) {
@@ -1546,10 +1554,10 @@ header {
             margin-right: 5px; } }
       .active_number_wrap .active_number_wrap_output .active_number_box .number_info_box .time_text {
         color: #8B90A0;
-        font: 400 .9rem 'Roboto', sans-serif; }
+        font: 500 .85rem 'Roboto', sans-serif; }
         @media (max-width: 380px) {
           .active_number_wrap .active_number_wrap_output .active_number_box .number_info_box .time_text {
-            font: 400 .8rem 'Roboto', sans-serif; } }
+            font: 500 .8rem 'Roboto', sans-serif; } }
         .active_number_wrap .active_number_wrap_output .active_number_box .number_info_box .time_text .red {
           color: #DD1919;
           font-weight: 600; }
@@ -1606,14 +1614,14 @@ header {
 .active_number_info .number_info_title {
   font: 300 1rem 'Roboto', sans-serif;
   color: #505565;
-  margin-bottom: 15px; }
+  margin-bottom: 20px; }
   @media (max-width: 990px) {
     .active_number_info .number_info_title {
       margin-bottom: 10px; } }
 
 .active_number_info .number_info_status {
   color: #505565;
-  font: 300 .95rem 'Roboto', sans-serif;
+  font: 400 .95rem 'Roboto', sans-serif;
   margin-bottom: 15px; }
   @media (max-width: 990px) {
     .active_number_info .number_info_status {
@@ -1621,7 +1629,7 @@ header {
 
 .active_number_info .number_info_send {
   color: #505565;
-  font: 300 .95rem/19px 'Roboto', sans-serif;
+  font: 400 .95rem/19px 'Roboto', sans-serif;
   margin-bottom: 20px; }
   @media (max-width: 990px) {
     .active_number_info .number_info_send {
@@ -1629,7 +1637,9 @@ header {
 
 .active_number_info .number_info_warning {
   color: #505565;
-  font: 300 .87rem/16px 'Roboto', sans-serif; }
+  font: 500 .87rem/16px 'Roboto', sans-serif; }
+  .active_number_info .number_info_warning strong {
+    font: 900 .87rem 'Roboto', sans-serif; }
 
 .active_number_info .number_sms_output {
   display: grid;
@@ -1653,7 +1663,11 @@ header {
     color: #505565; }
   .active_number_info .number_sms_output .number_sms_box .sms_text {
     font: normal .9rem/20px 'Roboto', sans-serif;
-    color: #505565; }
+    color: #505565;
+    max-width: 85%; }
+    @media (max-width: 990px) {
+      .active_number_info .number_sms_output .number_sms_box .sms_text {
+        max-width: 100%; } }
 
 .main_wrap {
   display: grid;
