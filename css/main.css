@@ -1285,13 +1285,168 @@ header {
     @media (max-width: 576px) {
       .services_output_box .output_services_name .output_services_name_text {
         font: 600 .87rem 'Roboto', sans-serif; } }
-  .services_output_box .output_services_price .output_services_price_text {
-    font: 600 1rem 'Roboto', sans-serif;
-    color: #505565;
-    white-space: nowrap; }
-    @media (max-width: 576px) {
-      .services_output_box .output_services_price .output_services_price_text {
-        font: 600 .87rem 'Roboto', sans-serif; } }
+  .services_output_box .hide_form_mob {
+    display: none; }
+    @media (max-width: 990px) {
+      .services_output_box .hide_form_mob {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        position: relative;
+        left: -16.5px; } }
+    .services_output_box .hide_form_mob input {
+      background: #FFF;
+      border: 1px solid #A1A4B1;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border-radius: 4px;
+      width: 50px;
+      padding: 5px;
+      font: 400 .75rem 'Roboto', sans-serif;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      color: #8B90A0;
+      height: 32px;
+      outline: none; }
+    .services_output_box .hide_form_mob button {
+      height: 32px;
+      border: none;
+      outline: none;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      color: #fff;
+      width: 56px;
+      cursor: pointer;
+      font: 700 .75rem 'Roboto', sans-serif;
+      text-align: center;
+      background: -o-linear-gradient(183.19deg, #E2C299 5.64%, #C5A67C 94.29%);
+      background: linear-gradient(266.81deg, #E2C299 5.64%, #C5A67C 94.29%);
+      border-radius: 4px; }
+  .services_output_box .output_services_price {
+    position: relative; }
+    @media (max-width: 990px) {
+      .services_output_box .output_services_price {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: right;
+        right: -5px; } }
+    .services_output_box .output_services_price:hover .hide_form {
+      opacity: 1; }
+      @media (max-width: 990px) {
+        .services_output_box .output_services_price:hover .hide_form {
+          opacity: 0; } }
+    .services_output_box .output_services_price .output_services_price_text {
+      font: 600 1rem 'Roboto', sans-serif;
+      color: #505565;
+      cursor: pointer;
+      white-space: nowrap; }
+      @media (max-width: 576px) {
+        .services_output_box .output_services_price .output_services_price_text {
+          font: 600 .87rem 'Roboto', sans-serif; } }
+    .services_output_box .output_services_price .hide_form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      opacity: 0;
+      grid-gap: 8px;
+      position: absolute;
+      top: -3px; }
+    .services_output_box .output_services_price input {
+      background: #FFF;
+      border: 1px solid #A1A4B1;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border-radius: 4px;
+      width: 50px;
+      padding: 5px;
+      font: 400 .75rem 'Roboto', sans-serif;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      color: #8B90A0;
+      height: 32px;
+      outline: none; }
+    .services_output_box .output_services_price button {
+      height: 32px;
+      border: none;
+      outline: none;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      color: #fff;
+      width: 56px;
+      cursor: pointer;
+      font: 700 .75rem 'Roboto', sans-serif;
+      text-align: center;
+      background: -o-linear-gradient(183.19deg, #E2C299 5.64%, #C5A67C 94.29%);
+      background: linear-gradient(266.81deg, #E2C299 5.64%, #C5A67C 94.29%);
+      border-radius: 4px; }
+  .services_output_box input[type="number"]::-webkit-outer-spin-button,
+  .services_output_box input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  .services_output_box .none_nom {
+    position: relative; }
+    .services_output_box .none_nom:hover .none_num_box {
+      opacity: 1;
+      pointer-events: auto; }
+    .services_output_box .none_nom .none_num_box {
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      position: absolute;
+      width: 180px;
+      padding: 8px;
+      background: #000;
+      z-index: 9;
+      border-radius: 4px;
+      pointer-events: none;
+      opacity: 0;
+      left: 50%;
+      bottom: -30px;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+      .services_output_box .none_nom .none_num_box::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        bottom: -30px;
+        border: 10px solid transparent;
+        border-top: 10px solid #000; }
+      .services_output_box .none_nom .none_num_box::after {
+        content: '';
+        height: 30px;
+        width: 100%;
+        position: absolute;
+        display: block;
+        bottom: -15px;
+        left: 0; }
+      .services_output_box .none_nom .none_num_box p {
+        margin-bottom: 10px;
+        color: #fff;
+        font: 400 .75rem 'Roboto', sans-serif; }
+      .services_output_box .none_nom .none_num_box a {
+        padding: 10px 13px;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        font: 600 .87rem 'Roboto', sans-serif;
+        background: -o-linear-gradient(183.19deg, #E2C299 5.64%, #C5A67C 94.29%);
+        background: linear-gradient(266.81deg, #E2C299 5.64%, #C5A67C 94.29%);
+        -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 4px; }
+  @media (max-width: 990px) {
+    .services_output_box .output_services_coll {
+      position: relative;
+      right: -5px; } }
   .services_output_box .output_services_coll .output_services_coll_text {
     font: 400 .9rem 'Roboto', sans-serif;
     white-space: nowrap;
