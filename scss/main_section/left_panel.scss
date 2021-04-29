@@ -196,7 +196,7 @@
     }
     @media (max-width: 576px) {
         grid-template-columns: 20px 35px 3fr 1fr 1fr;
-        grid-gap: 8px;
+        grid-gap: 0 8px;
     }
     .output_heart {
         display: flex;
@@ -210,6 +210,10 @@
         height: 32px;
         width: 32px;
         cursor: pointer;
+        @media (max-width: 990px) {
+            position: relative;
+            top: 5px;
+        }
         @media (max-width: 576px) {
             height: 25px;
             width: 25px;
@@ -260,11 +264,11 @@
         @media (max-width: 990px) {
             grid-column-start: 4;
             grid-column-end: 6;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
             position: relative;
-            left: -16.5px;
+            left: 0;
         }
         input {
             background: #FFF;
@@ -278,6 +282,7 @@
             color: #8B90A0;
             height: 32px;
             outline: none;
+            margin-right: 8px;
         }
         button {
             height: 32px;
@@ -325,6 +330,10 @@
             grid-gap: 8px;
             position: absolute;
             top: -3px;
+            @media (max-width: 990px) {
+                pointer-events: none;
+                display: none;
+            }
         }
         input {
             background: #FFF;
@@ -364,6 +373,9 @@
             .none_num_box {
                 opacity: 1;
                 pointer-events: auto;
+                @media (max-width: 990px) {
+                    opacity: 0;
+                }
             }
         }
         .none_num_box {
