@@ -103,6 +103,7 @@
                 appearance: none;
                 outline: none;
                 cursor: pointer;
+                margin-right: 20px;
                 @media (max-width: 990px) {
                     display: none;
                 }
@@ -142,6 +143,7 @@
             .top_panel_balance {
                 margin: 0 25px;
                 padding: 0 25px;
+                margin-left: 5px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -360,7 +362,7 @@
                     z-index: 99;
                     opacity: 0;
                     transition: .2s;
-                    pointer-events: auto;
+                    pointer-events: none;
                     @media (max-width: 576px) {
                         width: 350px;
                         right: -85px;
@@ -565,6 +567,7 @@
             }
             .top_panel_notification {
                 display: flex;
+              
                 align-items: center;
                 img {
                     margin-right: 12px;

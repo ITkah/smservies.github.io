@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SmsServies</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="margin_custom">
+            <div class="header_top">
+                <div class="container padding">
+                    <div class="header_top_wrap">
+                        <div class="header_logo">
+                            <img src="img/icon/logo.svg" class="logo_img" alt="logo">
+                            <p class="logo_text">Аренда номера для приема смс</p>
+                        </div>
+                        <div class="header_top_panel">
+                            <div class="top_panel_notification">
+                                <img src="img/icon/music-note_active.svg" class="notification_img active_mus" alt="mus">
+                                <p class="notification_text active_text">Вкл</p>
+                                <img src="img/icon/music-note.svg" class="notification_img" alt="mus">
+                                <p class="notification_text">Выкл</p>
+                            </div>
+                            <div class="top_panel_balance">
+                                <a href="#" class="balance_box">
+                                    <img src="img/icon/balans.svg" class="balance_img" alt="balance">
+                                    <p class="balance_text">Баланс <span class="balance_money">1100.0$</span></p>
+                                </a>
+                                <div class="balance_sale">
+                                    <a href="#" class="balance_sale_text">Скидка 10%</a>
+                                </div>
+                            </div>
+                            <div class="top_panel_lang">
+                                <img src="img/icon/ru.svg" class="lang_main_img" alt="ru">
+                                <p class="lang_main_text">RU</p>
+                                <a href="#" class="lang_hide">
+                                    <img src="img/icon/ru.svg" alt="ru">
+                                    <p>EN</p>
+                                </a>
+                            </div>
+                            <div class="top_panel_message">
+                                <img src="img/icon/mes.svg" class="message_img" alt="sms">
+                                <span class="messages_coll">10</span>
+                                <div class="message_hide">
+                                    <div class="message_hide_box">
+                                        <a href="#" class="message_hide_title">Новое Разработали программу лоялльности</a>
+                                        <p class="message_hide_text">24.10.2019</p>
+                                    </div>
+                                    <div class="message_hide_box">
+                                        <a href="#" class="message_hide_title">Новое Разработали программу лоялльности</a>
+                                        <p class="message_hide_text">24.10.2019</p>
+                                    </div>
+                                    <div class="message_hide_box">
+                                        <a href="#" class="message_hide_title">Новое Разработали программу лоялльности</a>
+                                        <p class="message_hide_text">24.10.2019</p>
+                                    </div>
+                                    <div class="message_hide_box">
+                                        <a href="#" class="message_hide_title">Новое Разработали программу лоялльности</a>
+                                        <p class="message_hide_text">24.10.2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top_panel_user">
+                                <img src="img/icon/user.svg" class="call_user" alt="user">
+                                <div class="user_hide_wrap">
+                                    <div class="user_hide_box">
+                                        <p class="user_hide_text">Ваш статуст: Обычный</p>
+                                    </div>
+                                    <div class="user_hide_box">
+                                        <p class="user_hide_text">ID profile</p>
+                                    </div>
+                                    <div class="user_hide_box">
+                                        <p class="user_hide_text">Ваш ключ API</p>
+                                    </div>
+                                    <div class="user_hide_box">
+                                        <p class="user_hide_text">Ваша реферальная ссылка</p>
+                                        <div class="ref_box" onclick="copyRef()">
+                                            <input value="http: \\ gives-smms.com\?ref=17809" id="copy" class="rev_link" readonly>
+                                            <span class="rev_btn">
+                                                <img src="img/icon/ref_dis.svg"  class="dis" alt="ref">
+                                                <img src="img/icon/ref_act.svg"  class="act" alt="act">
+                                                <img src="img/icon/ref_copy.svg" class="copy" alt="copy">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="user_hide_box">
+                                        <p class="user_hide_text">email@tut.by</p>
+                                    </div>
+                                    <div class="user_hide_box">
+                                        <p class="user_hide_text">Настройки</p>
+                                    </div>
+                                    <div class="user_hide_box">
+                                        <p class="user_hide_text">Пополнить баланс</p>
+                                    </div>
+                                    <div class="user_hide_box">
+                                        <p class="user_hide_text">Приведи друга</p>
+                                    </div>
+                                    <div class="user_hide_box">
+                                        <p class="user_hide_text">Баланс</p>
+                                    </div>
+                                    <div class="user_hide_box">
+                                        <p class="user_hide_text">Выйти</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header_btn_menu">
+                            <img src="img/icon/menu.svg" class="header_btn_img" alt="menu">
+                            <span class="header_btn_text">Menu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header_nav">
+                <div class="container padding">
+                    <div class="header_top_panel">
+                        <div class="top_panel_notification">
+                            <img src="img/icon/music-note_active.svg" class="notification_img active_mus" alt="mus">
+                            <p class="notification_text active_text">Вкл</p>
+                            <img src="img/icon/music-note.svg" class="notification_img" alt="mus">
+                            <p class="notification_text">Выкл</p>
+                        </div>
+                        <div class="top_panel_balance">
+                            <a href="#" class="balance_box">
+                                <img src="img/icon/balans.svg" class="balance_img" alt="balance">
+                                <p class="balance_text">Баланс <span class="balance_money">1100.0$</span></p>
+                            </a>
+                            <div class="balance_sale">
+                                <a href="#" class="balance_sale_text">Скидка 10%</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header_nav_wrap">
+                        <div class="header_nav_close">
+                            <img src="img/icon/close.svg" alt="close">
+                        </div>
+                        <ul class="header_nav_box">
+                            <li class="header_item">
+                                <a href="#" class="header_link">
+                                    <img src="img/icon/nav_icon/sms_act.svg" alt="icon"> СМС Активация
+                                </a>
+                            </li>
+                            <!-- <li class="header_item">
+                                <a href="#" class="header_link">
+                                    <img src="img/icon/nav_icon/voic.svg" alt="icon"> Голосовая активация
+                                </a>
+                            </li> -->
+                            <li class="header_item">
+                                <a href="#" class="header_link">
+                                    <img src="img/icon/nav_icon/arenda.svg" alt="icon"> Аренда номеров
+                                </a>
+                            </li>
+                            <li class="header_item">
+                                <a href="#" class="header_link">
+                                    <img src="img/icon/nav_icon/balans.svg" alt="icon"> Пополнить баланс
+                                </a>
+                            </li>
+                            <li class="header_item">
+                                <a href="#" class="header_link">
+                                    <img src="img/icon/nav_icon/ref.svg" alt="icon"> Реферальная программа
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="header_nav_box">
+                            <li class="header_item">
+                                <a href="#" class="header_link call_menu">
+                                    <img src="img/icon/nav_icon/instuct.svg" alt="icon">FAQ и инструкции
+                                </a>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="#">Сервисы</a>
+                                        <img src="img/icon/arr.svg" class="arr_icon call_menu" alt="arr">
+                                        <ul class="sub_menu_2">
+                                            <li>
+                                                <a href="#">
+                                                    ВКонтакте
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    ВКонтакте
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    ВКонтакте
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    ВКонтакте
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Сервисы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Сервисы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Сервисы</a>
+                                    </li>
+                                </ul>
+                                <img src="img/icon/arr.svg" class="mob_arr call_menu" alt="mob_arr">
+                            </li>
+                            <li class="header_item">
+                                <a href="#" class="header_link">
+                                    <img src="img/icon/nav_icon/help.svg" alt="icon"> Служба поддержки
+                                </a>
+                            </li>
+                            <!-- <li class="header_item">
+                                <a href="#" class="header_link">
+                                    <img src="img/icon/nav_icon/faq.svg" alt="icon"> FAQ инфо
+                                </a>
+                            </li> -->
+                            <li class="header_item">
+                                <a href="#" class="header_link">
+                                    <img src="img/icon/nav_icon/git.svg" alt="icon"> Для разработчиков <span>-10%</span>
+                                </a>
+                            </li>
+                            <li class="header_item">
+                                <a href="#" class="header_link">
+                                    <img src="img/icon/nav_icon/api.svg" alt="icon"> API
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="autorization padding margin">
+                <div class="container">
+                    <div class="autorization_wrap">
+                        <div class="autorization_info">
+                            <p class="autorization_title">Зарегистрируйтесь, чтобы купить номер для приема смс</p>
+                            <div class="autorization_info_wrap">
+                                <div class="autorization_item">
+                                    <img src="img/auto/1.svg" alt="auto">
+                                    <p>Прием смс</p>
+                                </div>
+                                <div class="autorization_item">
+                                    <img src="img/auto/2.svg" alt="auto">
+                                    <p>Повторный прием смс в рамках 20 минут</p>
+                                </div>
+                                <div class="autorization_item">
+                                    <img src="img/auto/3.svg" alt="auto">
+                                    <p>Реферальная<br> программа - 10%</p>
+                                </div>
+                                <div class="autorization_item">
+                                    <img src="img/auto/4.svg" alt="auto">
+                                    <p>Скидки для<br> постоянных клиентов</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="autorization_form">
+                            <form class="form">
+                                <div class="form_input_box">
+                                    <p>Введите реальный email</p>
+                                    <input type="email" placeholder="Введите реальный email">
+                                </div>
+                                <div class="form_input_box">
+                                    <p>Введите пароль</p>
+                                    <input type="password" placeholder="Пароль">
+                                </div>
+                                <div class="form_input_box">
+                                    <p>Введите пароль еще раз</p>
+                                    <input type="password" placeholder="Введите пароль еще раз">
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="suc">
+                                    <label for="suc">Я согласен с обработкой персональных данных</label>
+                                </div>
+                                <div class="btn_wrap">
+                                    <button type="submit">Зарегистрироваться </button>
+                                    <a href="#">Войти</a>
+                                </div>
+                                <div class="social_box">
+                                    <a href="#">
+                                        <img src="img/auto/soc1.svg" alt="soca">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/auto/soc2.svg" alt="soca">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/auto/soc3.svg" alt="soca">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/auto/soc4.svg" alt="soca">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/auto/soc5.svg" alt="soca">
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
