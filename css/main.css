@@ -32,6 +32,7 @@ header {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .header_top .header_logo {
+    cursor: pointer;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
